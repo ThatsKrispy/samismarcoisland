@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://samismarcoisland.com/</loc>
+    <loc>https://www.samismarcoisland.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://samismarcoisland.com/menus/lunch.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://samismarcoisland.com/menus/dinner.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://samismarcoisland.com/menus/happyhour.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://samismarcoisland.com/menus/togo.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://samismarcoisland.com/privacy.html</loc>
+    <loc>https://www.samismarcoisland.com/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://samismarcoisland.com/accessibility.html</loc>
+    <loc>https://www.samismarcoisland.com/accessibility.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
