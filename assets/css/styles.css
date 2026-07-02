@@ -1,0 +1,134 @@
+/* Sami's Marco Island — shared stylesheet for secondary pages
+   (accessibility, privacy). Tokens mirror the homepage brand palette. */
+:root {
+  --crimson: #C0102A;
+  --dark:    #1a1a1a;
+  --charcoal:#333333;
+  --mid:     #666666;
+  --light:   #f0ece6;
+  --white:   #ffffff;
+  --ff-display: "Playfair Display", Georgia, serif;
+  --ff-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --sz-sm:  0.85rem;
+  --sz-md:  1rem;
+  --sz-2xl: 1.6rem;
+  --sz-4xl: 2.5rem;
+  --hh: 64px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--ff-body);
+  font-weight: 400;
+  color: var(--charcoal);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  background: var(--crimson);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 6px 0;
+  text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--light);
+  background: var(--white);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--hh);
+  gap: 1rem;
+}
+.logo { text-decoration: none; line-height: 1; display: inline-flex; flex-direction: column; }
+.logo-text {
+  font-family: var(--ff-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--crimson);
+}
+.logo-sub {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-family: var(--ff-body);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn-outline-dark {
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  background: transparent;
+  padding: 0.5rem 1rem;
+}
+.btn-outline-dark:hover,
+.btn-outline-dark:focus-visible { background: var(--dark); color: #fff; }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--light);
+  background: var(--light);
+  color: var(--charcoal);
+  font-size: var(--sz-sm);
+}
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+.footer-bottom p { margin: 0; }
+.footer-legal { display: flex; gap: 1.25rem; }
+.footer-legal a { color: var(--charcoal); text-decoration: none; }
+.footer-legal a:hover,
+.footer-legal a:focus-visible { color: var(--crimson); text-decoration: underline; }
+
+/* Base typography helpers */
+a { color: var(--crimson); }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--light);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+:focus-visible { outline: 2px solid var(--crimson); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
